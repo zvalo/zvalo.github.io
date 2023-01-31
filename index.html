@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.92.2" />
+            <meta charset="utf-8" />
+    <title>zvalo </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="zvalo&#39;s cv terminal format">
+    <meta property="og:title" content="zvalo" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://zvalo.github.io/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="https://zvalo.github.io/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/js/jquery.terminal.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/css/jquery.terminal.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    
+    </head>
+        <body>
+        
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+    var availableCommands = ["all", "whois", 'social', 'work', 'education',
+                    'skills', 'softskills', 'languages',
+                    'projects', 
+                     'startx', 
+                     'exit', 
+                    "misc",
+                    
+                    ] 
+
+    $('body').terminal(function(command, term) {
+
+     
+    function whois () {
+        term.echo ("");
+         
+            term.echo ("[[b;grey;]Name:]\t\t\tzvalo");
+            term.echo ("[[b;grey;]Profession:]\t\tCybersecurity");
+            term.echo ("[[b;grey;]Location:]\t\tSlovakia 🇸🇰");
+            
+                term.echo ("[[b;grey;]Email:]\t\t\tUnknown");
+            
+            
+                term.echo ("[[b;grey;]Homepage:]\t\thttps:\/\/zvalo.github.io");
+            
+            
+                term.echo ("")
+                term.echo ("A tech-savvy enthusiast, mastering the art of IT, computing and cybersecurity, with a passion for Linux distros, making the digital world a safer place.\n")
+            
+        
+        term.echo ("");
+      }
+
+    function social () {
+        term.echo("");
+        
+            
+                
+                    term.echo("github:" + "     https:\/\/github.com\/zvalo");
+                
+                    term.echo("twitter:" + "    https:\/\/twitter.com");
+                
+            
+        
+        term.echo("")
+    }
+
+    function work () {
+        term.echo("");
+        
+            
+                term.echo("[[b;red;]Senior Security Supervision Specialist]");
+                term.echo("Telco Industry");
+                term.echo("Slovakia 🇸🇰");
+                term.echo("2020 - Present");
+                term.echo ("");
+                term.echo("my task is to manage activities in the SOC");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;purple;]Security Supervision Specialist]");
+                term.echo("Telco Industry");
+                term.echo("Slovakia 🇸🇰");
+                term.echo("2018 - 2020");
+                term.echo ("");
+                term.echo("my task was to manage activities in the SOC");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]Technical Security Administrator]");
+                term.echo("Telco Industry");
+                term.echo("Slovakia 🇸🇰");
+                term.echo("2006 - 2018");
+                term.echo ("");
+                term.echo("I was responsible for managing and supervising physical and information security");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]System Administrator]");
+                term.echo("IT Industry");
+                term.echo("Slovakia 🇸🇰");
+                term.echo("2005 - 2006");
+                term.echo ("");
+                term.echo("my task was to manage customer systems in private and public administration");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]System Administrator]");
+                term.echo("Media Industry");
+                term.echo("Slovakia 🇸🇰");
+                term.echo("1998 - 2005");
+                term.echo ("");
+                term.echo("my role was to manage the entire regional studio information system");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+    function education () {
+        term.echo("");
+        
+            
+                term.echo("[[b;red;]Certified Ethical Hacker]");
+                term.echo("Sept 2020");
+                
+                    term.echo("EC-Council");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]Red Hat Certified Technician]");
+                term.echo("Oct 2007");
+                
+                    term.echo("Red Hat");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]Microsoft Certified Professional]");
+                term.echo("2005");
+                
+                    term.echo("Microsoft");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]Bachelor\u0027s degree - Information Technology]");
+                term.echo("2001 - 2004");
+                
+                    term.echo("Matej Bel University");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+    function skills () {
+        term.echo(" ");
+        
+            
+                var bar_length = Math.round( 75  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Cybersecurity:]\n" +
+                        bar_filled + bar_blank + 
+                         75  +"%");
+                
+                    term.echo("SOC, SIEM, SOAR, DDoS, CCTV");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]System administration:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                    term.echo("OSX, Linux, Windows");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 80  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Web development:]\n" +
+                        bar_filled + bar_blank + 
+                         80  +"%");
+                
+                    term.echo("HTML, CSS, Jekyll, Hugo, Joomla");
+                
+                term.echo ("")
+            
+        
+    }
+    function softskills () {
+        term.echo("");
+        
+            
+                var bar_length = Math.round( 40  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Programming:]\n" +
+                       bar_filled + bar_blank +
+                        40  +"%");
+                
+                    term.echo("bash, perl, php, sql");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]Analysis:]\n" +
+                       bar_filled + bar_blank +
+                        90  +"%");
+                
+                term.echo ("")
+            
+        
+    }
+      
+    function languages () {
+        term.echo("");
+        
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;White;]Slovak:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  100  +"%");
+                
+                    term.echo("native language");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 50  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;grey;]English:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  50  +"%");
+                
+                    term.echo("level B2");
+                
+                term.echo("")
+            
+        
+    }
+
+    
+    function projects () {
+        term.echo("");
+        
+            
+                term.echo("[[b;red;]Security Operation Centre]");
+                term.echo("since 2016")
+                term.echo("")
+                
+                    term.echo("SOC for Telco company");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;blue;]Server room]");
+                term.echo("since 1998")
+                term.echo("")
+                
+                    term.echo("project to build a new and modern server room");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;grey;]datagen]");
+                term.echo("Since 1995")
+                term.echo("https:\/\/www.datagen.sk")
+                
+                    term.echo("web development");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+        
+    }
+
+    function misc (){
+        term.echo ("")
+        term.echo("[[b;teal;]and a few words about me ...]" + "\n")
+        term.echo ("[[;orange;]I\u0027m a technology enthusiast. Back in the day, \nI started out as a self-taught PMD-85 and enjoyed \nmy first 8-bit Atari. But of course, that was \npreceded by the video game gems from Электроника ИМ. \nI\u0027ve always enjoyed solving various technology-related \nproblems. Most of all, I like to test operating \nsystems and especially their latest versions. \n\nIt doesn\u0027t matter if it\u0027s Windows, Unix\/Linux\/BSD \nor macOS, or in the mobile world Android, iOS \nor the now defunct Windows Mobile and Symbian. \nI also enjoy testing applications of various kinds \nand focuses and virtualization. In my spare time, \nI manage servers for a small circle of friends and \nmake sure they run securely. Recently, I have turned \nmy interest to the field of cyber security, \nwhich I am also professionally involved in.\n]")
+        term.echo ("")
+    }
+
+    function help () {
+        term.echo("\n[[b;white;]Available commands:]\n" +
+                  "\n" + availableCommands.join(' ')+ '\n') 
+    }
+
+      function source() {
+          term.echo("        _______            \n"+
+                    "       |       |           \n"+
+                    "       |       |           \n"+
+                    "       |_______|_______    \n"+
+	                "               |       |   \n"+
+                    "               |       |   \n"+
+                    " ______________|_______|   \n"+
+                    "|      |       |       |   \n"+
+                    "|      |       |       |   \n"+
+                    "|______|_______|_______|   \n"+
+                    "[[;red;]May the source be with you]\n"+
+                    "[[;grey;]https://github.com/4s3ti/terminalcv\n");
+      }
+
+    
+    function progress(percent, width) {
+        var size = Math.round(width*percent/100);
+        var left = '', taken = '', i;
+        for (i=size; i--;) {
+            taken += '=';
+        }
+        if (taken.length > 0) {
+            taken = taken.replace(/=$/, '>');
+        }
+        for (i=width-size; i--;) {
+            left += ' ';
+        }
+        return '[' + taken + left + '] ' + percent + '%';
+    }
+
+    function loading () {
+        var i = 0, size = 30;
+        prompt = term.get_prompt();
+        string = progress(0, size);
+        term.set_prompt(progress);
+        animation = true;
+        (function loop() {
+            string = progress(i++, size);
+            term.set_prompt(string);
+            if (i < 100) {
+                timer = setTimeout(loop, 10);
+            } else {
+                term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                animation = false
+            }
+        })();
+    }
+
+       
+        commands = command.split(/[ ]+/);
+        switch(commands[0]) {
+            case 'whois':
+                whois();
+                break;
+            case 'social':
+                social();
+                break;
+            case 'work':
+                work();
+                break;
+            case 'education':
+                education();
+                break;
+            case 'skills':
+                skills();
+                break;
+            case 'softskills':
+                softskills();
+                break;
+            case 'languages':
+                languages();
+                break;
+            case 'projects':
+                projects();
+                break;
+            case 'misc':
+                misc();
+                break;
+            case 'help':
+                help();
+                break;
+            case 'all':
+                whois();
+                social();
+                work();
+                education();
+                skills();
+                softskills();
+                languages();
+                projects();
+                
+                    misc();
+                
+                
+                break;
+            
+            case 'startx':
+                term.echo("loading ...")
+                loading();
+                setTimeout(function(){window.location = "https:\/\/www.datagen.sk"}, 2000);
+                break;
+            
+            case ':(){:|:&};:':
+            case 'source':
+                source();
+                break;
+            
+            case 'exit':
+                term.echo("terminating ... ")
+                loading();
+                setTimeout(function(){window.location = 'about:blank'}, 2000);
+                break;
+            
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;grey;]zvalo@terminal][[;grey;]:~$]' + " ",
+        greetings: "[[b;white;]Welcome to my online resume\n\n\nType \u0027help\u0027 for a list of available commands\n]",
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: true,
+        completion: availableCommands
+        
+    });
+});
+</script>
+
+        </body>
+</html>
